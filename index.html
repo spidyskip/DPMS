@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DPMS Universe</title>
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  .bg {
+    /* Placeholder for a universe background image */
+    background-color: black;
+    background-image: url('your_universe_image.jpeg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+  .bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay to make text more readable */
+  }
+  .content {
+    position: relative;
+    z-index: 2;
+  }
+  .dpms {
+    font-size: 5em;
+    letter-spacing: 0.1em;
+  }
+  .dpms span {
+    color: blue; /* Default color */
+  }
+  .dpms .orange {
+    color: orange;
+  }
+  .dpms .grey {
+    color: grey;
+  }
+  .phrase {
+    font-size: 1.5em;
+    margin-top: 20px;
+  }
+</style>
+</head>
+<body>
+
+<div class="bg">
+  <div class="content">
+    <div class="dpms">
+      <span>D</span><span class="orange">P</span><span>M</span><span class="grey">S</span>
+    </div>
+    <div class="phrase">
+      how time slips away with impetuous speed
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
