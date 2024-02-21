@@ -1,73 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DPMS Universe</title>
-<style>
-  body, html {
-    height: 100%;
-    margin: 0;
-    font-family: Arial, sans-serif;
-  }
-  .bg {
-    /* Placeholder for a universe background image */
-    background-color: black;
-    background-image: url('your_universe_image.jpeg'); /* Replace with your image path */
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-  }
-  .bg::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay to make text more readable */
-  }
-  .content {
-    position: relative;
-    z-index: 2;
-  }
-  .dpms {
-    font-size: 5em;
-    letter-spacing: 0.1em;
-  }
-  .dpms span {
-    color: blue; /* Default color */
-  }
-  .dpms .orange {
-    color: orange;
-  }
-  .dpms .grey {
-    color: grey;
-  }
-  .phrase {
-    font-size: 1.5em;
-    margin-top: 20px;
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-image: url('images/bg.png');
+      background-size: cover;
+      background-position: center;
+      color: white;
+    }
+
+    .container {
+      text-align: center;
+      position: relative;
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 20px;
+      background-color: #fa8703;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .button:hover {
+      background-color: #4e4e4e;
+    }
+
+    .terminal-icon {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 50px;
+      /* Adjust width and height as needed */
+      height: auto;
+    }
+
+    .terminal-icon-link {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .logo {
+      width: 200px;
+      /* Adjust width and height as needed */
+      height: auto;
+    }
+  </style>
 </head>
+
 <body>
-
-<div class="bg">
-  <div class="content">
-    <div class="dpms">
-      <span>D</span><span class="orange">P</span><span>M</span><span class="grey">S</span>
-    </div>
-    <div class="phrase">
-      how time slips away with impetuous speed
-    </div>
+  <div class="container">
+    <a href="terminal.html" class="terminal-icon-link">
+      <img src="images/logo.png" alt="Terminal Icon" class="logo">
+    </a>
+    <p>How time slips away with impetuous speed.</p>
+    <a href="#" class="button">We Want You</a>
   </div>
-</div>
-
+  <div class="footer">
+    <p>&copy; 2024 DPMS Universe. All rights reserved.</p>
+  </div>
 </body>
+
 </html>
